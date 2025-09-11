@@ -1,19 +1,18 @@
 #pragma once
 
-enum class rank {ACE = 1, TWO, THREE, FOUR, FIVE, SIX, SEVEN , EIGHT, NINE, JACK, QUEEN, KING};
-enum class suit {SPADE, CLOVER, HEART, DIAMOND};
+enum class Suit {SPADE, CLOVER, HEART, DIAMOND};
 
 class Card {
 private:
 
-    rank rank;
-    suit suit;    
+    int rank;
+    Suit suit;    
 
 public:
-    card(rank, suit){};
-    ~card();
+    Card();
+    ~Card();
     
-    getRank() const;
-    getSuit() const;
+    int getRank() const;
+    Suit getSuit() const;
     
-}
+};
