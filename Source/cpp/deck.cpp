@@ -1,5 +1,5 @@
 #include "deck.h"
-#include <random>
+#include "random"
 #include <iostream>
 
 deck::deck() {
@@ -19,4 +19,18 @@ deck::deck() {
 }
 
 deck::~deck() {};
-void deck::shuffle() {};
+
+extern "C" size_t deckSize(const std::vector<Card> *v) {
+   return v->size();
+}
+
+extern "C" void swapCards(std::vector<Card> *v, size_t i, size_t j) {
+   std::swap ((*v)[i], (*v)[j]);
+}
+
+
+extern "C" void shuffleDeck(std::vector<Card> *v )
+
+void deck::shuffle() {
+   
+};
