@@ -24,8 +24,8 @@ std::string Card::toString() const {
         case Suit::DIAMOND:
             suitString = "Diamonds";
             break;
-        case Suit::CLOVER:
-            suitString = "Clovers";
+        case Suit::CLUB:
+            suitString = "Clubs";
             break;
         case Suit::SPADE:
             suitString = "Spades";

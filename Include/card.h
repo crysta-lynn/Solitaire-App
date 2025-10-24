@@ -3,7 +3,7 @@
 #include <string>
 #include <iostream>
 
-enum class Suit {SPADE, CLOVER, HEART, DIAMOND};
+enum Suit {SPADE, CLUB, HEART, DIAMOND};
 
 class Card {
 private:
