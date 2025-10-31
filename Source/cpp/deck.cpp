@@ -2,6 +2,8 @@
 #include "random"
 #include <iostream>
 
+extern "C" void shuffleDeck(Card* cards, int cardsSize);
+
 deck::deck() {
    cards.reserve(52);
    
@@ -20,17 +22,9 @@ deck::deck() {
 
 deck::~deck() {};
 
-extern "C" size_t deckSize(const std::vector<Card> *v) {
-   return v->size();
-}
-
-extern "C" void swapCards(std::vector<Card> *v, size_t i, size_t j) {
-   std::swap ((*v)[i], (*v)[j]);
-}
-
-
-extern "C" void shuffleDeck(std::vector<Card> *v )
-
 void deck::shuffle() {
-   
+   shuffleDeck(cards.data(), cards.size());
+   for (int i = 0; i < cards.size(); i += 1) {
+      std::cout << cards[i];
+   }
 };
