@@ -25,6 +25,6 @@ deck::~deck() {};
 void deck::shuffle() {
    shuffleDeck(cards.data(), cards.size());
    for (int i = 0; i < cards.size(); i += 1) {
-      std::cout << cards[i];
+      std::cout << cards[i] << std::endl;
    }
 };
