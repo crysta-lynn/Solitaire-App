@@ -4,7 +4,7 @@
 
 extern "C" void shuffleDeck(Card* cards, int cardsSize);
 
-deck::deck() {
+Deck::Deck() {
    cards.reserve(52);
    
    int cardCounter = 0;
@@ -20,11 +20,16 @@ deck::deck() {
    }
 }
 
-deck::~deck() {};
+Deck::~Deck() {};
 
-void deck::shuffle() {
+void Deck::shuffle() {
+
    shuffleDeck(cards.data(), cards.size());
-   for (int i = 0; i < cards.size(); i += 1) {
-      std::cout << cards[i] << std::endl;
-   }
+
 };
+
+void Deck::print() {
+   for (int c = 1; c < cards.size(); c +=1) {
+      std::cout << cards[c] << std::endl;
+   }
+}

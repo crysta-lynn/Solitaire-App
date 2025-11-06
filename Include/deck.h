@@ -3,13 +3,17 @@
 #include "card.h"
 #include <vector>
 
-class deck{
+class Deck{
 private:
     std::vector<Card> cards;
 
 public:
-    deck();
-    ~deck();
+    Deck();
+    ~Deck();
 
     void shuffle();
+
+    void print();
 };
+
+
