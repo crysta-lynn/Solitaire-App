@@ -6,9 +6,9 @@
 
 int main() {
     
-    deck d;   
-    std::cout << "Hello, solitaire." << std::endl;
+    Deck d;   
     d.shuffle();
-
+    d.shuffle();
+    d.print();
     return 0;
 }

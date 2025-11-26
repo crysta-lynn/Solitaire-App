@@ -13,8 +13,6 @@ Deck::Deck() {
       for (int rank = 1; rank <= 13; rank += 1) {
 
          cards.emplace_back(static_cast<Suit>(suit), rank);
-         std::cout << cards[cardCounter] << std::endl;
-         cardCounter += 1;
 
       }
    }
