@@ -1,5 +1,4 @@
 #include "deck.h"
-#include "random"
 #include <iostream>
 
 extern "C" void shuffleDeck(Card* cards, int cardsSize);

@@ -17,8 +17,13 @@ private:
     std::array<pile, 7> tableau;
     std::array<pile, 4> foundation;
 
+    void dealTableau();
+    void dealRemaining();
+
 public:
     Game();
+
+    void deal();
 
 };
 
