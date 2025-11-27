@@ -9,6 +9,6 @@ int main() {
     Deck d;   
     d.shuffle();
     d.shuffle();
-    d.print();
+    d.print(); 
     return 0;
 }
