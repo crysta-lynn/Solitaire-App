@@ -2,14 +2,18 @@
 
 #include "card.h"
 #include <vector>
+#include <array>
+
+const int maxPileSize = 52;
 
 struct pile{ 
-    std:: vector<Card> cards;
+    std:: array<int, maxPileSize> cards;
+    int size = 0;
 };
 
 class Deck{
 private:
-    pile initialDeck;
+    std::vector<Card> initialDeck;
     int deckOrder[52];
 
 public:

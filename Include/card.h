@@ -13,7 +13,7 @@ private:
     bool faceUp = false;
 
 public:
-    Card(Suit suit, int rank);
+    Card(Suit suit, int rank, bool faceUp);
     ~Card();
     
     int getRank() const;

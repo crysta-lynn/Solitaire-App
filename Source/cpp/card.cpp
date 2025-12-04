@@ -1,8 +1,9 @@
 #include "card.h"
 
-Card::Card(Suit suit, int rank)
+Card::Card(Suit suit, int rank, bool faceUp)
 : suit{suit}
 , rank{rank}
+, faceUp{false}
 {}
 
 Card::~Card(){}
