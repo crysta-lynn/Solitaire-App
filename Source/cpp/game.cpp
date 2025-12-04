@@ -5,6 +5,10 @@ Game::Game() {
     deal();
 }
 
+void Game::moveCard(pile source, pile destination, int numberOfCardsToMove) {
+    
+}
+
 void Game::dealTableau() {
     
 }

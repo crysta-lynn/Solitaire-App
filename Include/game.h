@@ -4,10 +4,6 @@
 #include <vector>
 #include <array>
 
-struct pile{ 
-    std:: vector<Card> cards;
-};
-
 class Game {
 private:
     Deck deck;
@@ -17,7 +13,7 @@ private:
     std::array<pile, 7> tableau;
     std::array<pile, 4> foundation;
 
-    void moveCard(pile destination);
+    void moveCard(pile source, pile destination, int numberOfCardsToMove);
     void dealTableau();
     void dealRemaining();
 

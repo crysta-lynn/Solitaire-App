@@ -3,9 +3,13 @@
 #include "card.h"
 #include <vector>
 
+struct pile{ 
+    std:: vector<Card> cards;
+};
+
 class Deck{
 private:
-    std::vector<Card> cards;
+    pile initialDeck;
     int deckOrder[52];
 
 public:

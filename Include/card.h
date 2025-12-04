@@ -10,6 +10,7 @@ private:
 
     int rank;
     Suit suit;    
+    bool faceUp = false;
 
 public:
     Card(Suit suit, int rank);
