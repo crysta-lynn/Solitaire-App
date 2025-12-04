@@ -1,7 +1,7 @@
 #include "deck.h"
 #include <iostream>
 
-extern "C" void shuffleDeck(Card* cards, int cardsSize);
+extern "C" void shuffleDeck(int* deckOrder, int cardsSize);
 
 Deck::Deck() {
    cards.reserve(52);
@@ -12,21 +12,25 @@ Deck::Deck() {
       for (int rank = 1; rank <= 13; rank += 1) {
 
          cards.emplace_back(static_cast<Suit>(suit), rank);
-
+         deckOrder[cardCounter] = cardCounter;
+         
+         std::cout << deckOrder[cardCounter] << " ";
+         cardCounter += 1;
       }
    }
+   std::cout << std::endl;
 }
 
 Deck::~Deck() {};
 
 void Deck::shuffle() {
 
-   shuffleDeck(cards.data(), cards.size());
+   shuffleDeck(deckOrder, cards.size());
 
 };
 
 void Deck::print() {
    for (int c = 1; c < cards.size(); c +=1) {
-      std::cout << cards[c] << std::endl;
+      std::cout << cards[deckOrder[c]] << std::endl;
    }
 }

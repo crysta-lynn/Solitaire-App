@@ -6,6 +6,7 @@
 class Deck{
 private:
     std::vector<Card> cards;
+    int deckOrder[52];
 
 public:
     Deck();

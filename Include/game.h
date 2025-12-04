@@ -17,6 +17,7 @@ private:
     std::array<pile, 7> tableau;
     std::array<pile, 4> foundation;
 
+    void moveCard(pile destination);
     void dealTableau();
     void dealRemaining();
 
