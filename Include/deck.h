@@ -6,7 +6,7 @@
 
 class Deck{
 private:
-    std::vector<Card> initialDeck;
+    std::vector<Card> deck;
     int deckOrder[52];
 
 public:

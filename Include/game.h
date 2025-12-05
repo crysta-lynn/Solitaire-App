@@ -20,7 +20,7 @@ private:
     std::array<pile, 7> tableau;
     std::array<pile, 4> foundation;
 
-    void moveCards(pile source, pile destination, int numberOfCardsToMove);
+    void moveCard(pile& source, pile& destination, int count);
     void dealTableau();
     void dealRemaining();
 
