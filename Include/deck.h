@@ -4,13 +4,6 @@
 #include <vector>
 #include <array>
 
-const int maxPileSize = 52;
-
-struct pile{ 
-    std:: array<int, maxPileSize> cards;
-    int size = 0;
-};
-
 class Deck{
 private:
     std::vector<Card> initialDeck;
