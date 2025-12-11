@@ -1,3 +1,7 @@
+;ASM implementation of fisher-yates shuffle, using rdrand to generate
+;a random integer, then scaling it down using multiplication and a 
+;bit shifting thing that made my brain hurt
+
 global shuffleDeck
 
 section .text
@@ -22,8 +26,8 @@ retryRand:
         mul ecx                 ;multiply random num by n
         mov eax, edx            ;shift to the higher bits; edx holds the higher bits that resulted from multiplying eax and ecx
 
-        ;swap i and
-        mov edx, [rdi + 4*rcx]
+        ;swap i and 
+        mov edx, [rdi + 4*rcx]  
         mov ebx, [rdi + 4*rax]
 
         mov [rdi + 4*rcx], ebx

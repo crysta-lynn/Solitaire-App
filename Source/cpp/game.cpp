@@ -1,3 +1,8 @@
+//game.cpp implements the game class.This file will coordinate all game
+//actions, shuffling, and dealing. card movement will be delegated to an
+//assembly moveCard function.
+
+
 #include "game.h"
 
 extern "C" void moveCardASM(int* source, int* sourceSize, int* destination, int* destinationSize, int numberOfCardsToMove);

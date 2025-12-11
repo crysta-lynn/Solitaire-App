@@ -1,3 +1,8 @@
+//card.h declares a card class to represent individual playing cards 
+//with a rank, suit, and face-up state.
+//Member functions include getters and a string conversion function.
+
+
 #pragma once
 
 #include <string>

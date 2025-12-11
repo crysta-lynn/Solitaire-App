@@ -1,6 +1,9 @@
 # Solitaire App
-A long term personal project. The goal is to create a solitaire application from scratch with c++.
-X86_64 assembly will be used to create some functions for a class project
+A long term personal project to practice c++. The goal is to create a solitaire application from scratch with c++.
+
+The code in this project defines cards, piles, and a deck, and begins building the game logic of klondike solitaire. A game class will handle dealing and moving cards from pile to pile.
+
+Parts of this program are written in x86-64 assembly for a course project. 
 
 
 ## To Do

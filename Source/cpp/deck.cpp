@@ -1,7 +1,14 @@
+//deck.cpp implements the Deck class from deck.h. It constructs the 52
+//card deck, creates the deck order array, and  calls the asm shuffleDeck
+//function to shuffle the deck order array.
+
+
 #include "deck.h"
 #include <iostream>
 
-// cards will stay in the initial deck,
+// cards will stay in the initial deck, piles will access cards through
+//the deck order array, which is shuffled by the asm shuffle function.
+// deck[deckOrder[i]]
 
 extern "C" void shuffleDeck(int* deckOrder, int cardsSize);
 

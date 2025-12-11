@@ -1,3 +1,8 @@
+//card.cpp implements the card class from card.h. This file includes the
+//constructor, destructor, getters, string conversion logic, and
+//ostream operator.
+
+
 #include "card.h"
 
 Card::Card(Suit suit, int rank, bool faceUp)
